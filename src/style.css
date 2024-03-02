@@ -50,6 +50,18 @@ main {
 #submit:hover {
   background-color: #0056b3; /* Darker blue on hover */
 }
+#hint {
+  text-align: left;
+  font-size: 16px;
+  color: #676565;
+  margin: 0 0 0 80px;
+  padding: 0;
+}
+#display {
+  font-size: 22px;
+  font-family: cursive;
+  line-height: 1.5;
+}
 
 #recipe {
   font-family: cursive;
@@ -74,4 +86,17 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
