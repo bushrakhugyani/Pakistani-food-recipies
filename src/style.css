@@ -66,8 +66,8 @@ main {
 #recipe {
   font-family: cursive;
   font-size: 22px;
-
-  text-align: center;
+  background: rgb(231, 224, 172, 0.5);
+  text-align: left;
   margin-bottom: 20px;
 }
 
@@ -88,6 +88,7 @@ footer a:hover {
   text-decoration: underline;
 }
 .generating {
+  text-align: center;
   animation: blink-animation 1s steps(5, start) infinite;
 }
 @keyframes blink-animation {
