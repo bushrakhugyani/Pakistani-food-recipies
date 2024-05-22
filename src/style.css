@@ -1,6 +1,7 @@
 body {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/205/original/recipe.jpg?1709319339");
   background-size: cover;
+  text-align: center;
 }
 .container {
   margin: 80px auto;
@@ -31,7 +32,7 @@ main {
   font-size: 22px;
   margin: 10px;
   padding: 15px;
-  width: 500px;
+  width: 60%;
   border-radius: 30px;
   border: 1px solid #f4edba; /* Light gray border */
   background-color: #f4edba;
@@ -54,7 +55,8 @@ main {
   text-align: left;
   font-size: 16px;
   color: #676565;
-  margin: 0 0 0 80px;
+  margin-left: 90px;
+  margin-top: 5px;
   padding: 0;
 }
 #display {
@@ -69,6 +71,8 @@ main {
   background: rgb(231, 224, 172, 0.5);
   text-align: left;
   margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 40px;
 }
 
 footer {
@@ -76,8 +80,8 @@ footer {
   text-align: center;
   margin-top: auto; /* Footer sticks to the bottom */
   padding: 40px;
-  color: rgb(105, 100, 100);
-  width: 100%;
+  color: #696464;
+  width: auto;
 }
 
 footer a {
@@ -99,5 +103,49 @@ footer a:hover {
 @-webkit-keyframes blink-animation {
   to {
     visibility: hidden;
+  }
+}
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+  .container {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  #recipe-generator-form {
+    padding: 10px;
+  }
+  #recipe-name {
+    max-width: 60%;
+    margin: 4px;
+  }
+  #submit {
+    max-width: 40%;
+  }
+  #recipe-name,
+  #submit {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  #hint {
+    font-size: 12px;
+    margin-left: 35px;
+  }
+
+  #display,
+  #recipe {
+    font-size: 16px;
+    margin: 15px 0;
+  }
+
+  footer {
+    font-size: 16px;
+    padding: 20px;
   }
 }
